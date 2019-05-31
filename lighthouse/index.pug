@@ -1,0 +1,66 @@
+doctype html
+// Based on an illustration by Al Power https://dribbble.com/shots/3982873-Peggy-s-Cove-Nova-Scotia-Canada
+html(lang="ja")
+	head
+		link(rel='stylesheet', href="main.css")
+	body
+		.box
+			.bg-circle
+			.base
+				.base-shadow
+			.tower-base
+				.tower-base-shadow
+			.entrance-container
+				.entrance-roof
+				.entrance-front
+					.entrance-door
+				.entrance-side
+					.entrance-window
+			.tower-container
+				.tower
+					.dark-side
+						.window.top
+						.window.middle
+						.window.bottom
+					.light-side
+				.tower-top
+					.dark-side
+					.light-side
+					.shadow-from-platform
+				.tower-platform
+					.shadow
+				.lantern-pane
+					.dark-side
+					.light-side
+					.window
+						.reflection.thick
+						.reflection.thin
+						.frame-left
+						.frame-right
+				.platform-fence
+					.rope
+					.rope
+					.rope
+					.pole
+					.pole
+					.pole
+					.pole
+				.cupola
+					.light
+					.shadow
+				.solarvalve
+					.tube
+						.shadow
+						.light
+					.hat
+					.spike
+				.shadow-from-entrance
+					.window-bottom
+			.fence
+				- for (var x = 0; x < 20; x++)
+					.pole
+			.vertical-pole.top
+			.vertical-pole.bottom
+		.link
+			span Inspired by
+			a(href='https://dribbble.com/shots/3982873-Peggy-s-Cove-Nova-Scotia-Canada' target='_blank')  Al Power's illustration
